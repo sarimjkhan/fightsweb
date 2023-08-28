@@ -1,0 +1,17 @@
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #f4f4f4;
+}
+
+.container {
+  margin-top: 2rem;
+}
+
+.nav-link.active {
+  color: white !important;
+}
+
+.nav-item a:hover {
+  background-color: rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+}

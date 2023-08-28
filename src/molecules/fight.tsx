@@ -22,8 +22,9 @@ const Fight = ({ id, title, options, mySelectedOptionId }: fightProps) => {
           <div key={option.optionId}>
             <span>{option.optionTitle}</span>
             <div className="progress my-2">
-              <div className="progress-bar" role="progressbar" style={{ width: `${percentage}%` }} aria-valuenow={percentage} aria-valuemin="0" aria-valuemax="100">
+              <div className="progress-bar" role="progressbar" style={{ width: `${percentage}%` }} aria-valuenow={percentage} aria-valuemin={0} aria-valuemax={100}>
                 {Math.round(percentage)}%
+                {mySelectedOptionId}
               </div>
             </div>
           </div>
